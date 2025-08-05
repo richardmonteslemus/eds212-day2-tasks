@@ -25,6 +25,23 @@ a = 1.2
 eval(df_da)
 ```
 
+```{r}
+ggplot(data = penguins, aes(x = bill_length_mm,
+                            y = bill_depth_mm)) + 
+  geom_point(aes(color = species)) + 
+  scale_color_manual(values = c("darkgreen", "darkblue", "darkred")) + 
+  labs(x = "Penguin bill length (mm)",
+       y = "Penguin bill depth (mm)", 
+       title = "Penguin bill length vs depth")
+```
 
 
+```{r}
+ggplot(data = penguins, aes(x = species, 
+                            y = flipper_length_mm))+ 
+  geom_jitter() + 
+  labs(x = "Penguin species", 
+       y = "Flipper length (mm)", 
+       title = "Flipper length per species")
+```
 

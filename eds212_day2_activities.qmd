@@ -1,4 +1,30 @@
 ---
-title: "eds212_day2_activities"
+title: "eds212 day2 activities"
 format: html
 ---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+```{r}
+fx <- expression(x^2)
+df_dx <- D(expr = fx, name = "x")
+df_dx
+x = 3 
+eval(df_dx)
+```
+
+```{r}
+pa <- expression(2*(3*a +2)^4 - 5)
+df_da <- D(expr = pa, name = "a")
+df_da
+a = 1.2 
+eval(df_da)
+```
+
+
+
+
